@@ -1,0 +1,290 @@
+.pay__page {
+  padding-top: 120px; }
+  .pay__page .base-tab__header {
+    margin-bottom: 40px; }
+    .pay__page .base-tab__header:before {
+      display: none; }
+    .pay__page .base-tab__header .scrollbar-inner {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .pay__page .base-tab__btn {
+    border-bottom: none !important;
+    padding: 8px 20px !important;
+    margin-right: 20px !important;
+    border-radius: 25px;
+    background: #f7f7f7;
+    font-size: 14px !important;
+    margin-bottom: 10px !important; }
+    .pay__page .base-tab__btn.active {
+      font-weight: 500 !important;
+      background: #ffd802; }
+      .pay__page .base-tab__btn.active:hover {
+        background: #ffc202; }
+    .pay__page .base-tab__btn:hover {
+      background: #efefef; }
+    .pay__page .base-tab__btn:before {
+      display: none; }
+  .pay__page__autopay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .pay__page__autopay__item {
+      width: 50%;
+      min-width: 300px;
+      margin-bottom: 40px; }
+      .pay__page__autopay__item .title {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 12px; }
+        .pay__page__autopay__item .title .status {
+          font-size: 12px;
+          padding: 2px 6px;
+          border-radius: 3px;
+          background: #eee;
+          color: #777; }
+          .pay__page__autopay__item .title .status.green {
+            color: #22af12;
+            background: rgba(34, 175, 18, 0.15); }
+      .pay__page__autopay__item .info {
+        font-size: 13px;
+        color: #909090;
+        margin-bottom: 15px; }
+      .pay__page__autopay__item .action-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .pay__page__autopay__item .action-row .btn {
+          margin-bottom: 10px; }
+        .pay__page__autopay__item .action-row .input-block {
+          margin-bottom: 10px;
+          width: 280px;
+          margin-right: 10px; }
+  .pay__page__bills__title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 12px; }
+  .pay__page__bills .table-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 28px;
+    margin-bottom: 20px; }
+    .pay__page__bills .table-controls .date {
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0 15px; }
+    .pay__page__bills .table-controls .btn {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border-radius: 50%;
+      background: #84b4df;
+      position: relative; }
+      .pay__page__bills .table-controls .btn:hover {
+        background: #4d91ce; }
+      .pay__page__bills .table-controls .btn.next-btn svg {
+        -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+            -ms-transform: translate(-50%, -50%) rotate(-90deg);
+                transform: translate(-50%, -50%) rotate(-90deg); }
+      .pay__page__bills .table-controls .btn.prev-btn svg {
+        -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            -ms-transform: translate(-50%, -50%) rotate(90deg);
+                transform: translate(-50%, -50%) rotate(90deg); }
+      .pay__page__bills .table-controls .btn svg {
+        width: 10px;
+        height: 6px;
+        fill: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .pay__page__bills__table .base-table thead td:nth-of-type(2) {
+    padding-left: 70px; }
+  .pay__page__bills__table .base-table .action-cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .pay__page__bills__table .base-table .action-cell .ico {
+      width: 25px;
+      margin-right: 15px; }
+      .pay__page__bills__table .base-table .action-cell .ico.yellow svg {
+        fill: #ed9f01; }
+      .pay__page__bills__table .base-table .action-cell .ico.blue svg {
+        fill: #84b4df; }
+      .pay__page__bills__table .base-table .action-cell .ico svg {
+        width: 25px; }
+  .pay__page__bills__table .base-table td {
+    font-weight: 400;
+    font-size: 14px; }
+    .pay__page__bills__table .base-table td .base-link {
+      font-size: 13px; }
+      .pay__page__bills__table .base-table td .base-link.blue {
+        color: #84b4df; }
+        .pay__page__bills__table .base-table td .base-link.blue:hover {
+          border-color: #84b4df; }
+      .pay__page__bills__table .base-table td .base-link.green {
+        color: #139a13; }
+        .pay__page__bills__table .base-table td .base-link.green:hover {
+          border-color: #139a13; }
+      .pay__page__bills__table .base-table td .base-link.red {
+        color: #ff0101; }
+        .pay__page__bills__table .base-table td .base-link.red:hover {
+          border-color: #ff0101; }
+    .pay__page__bills__table .base-table td .summ-cell {
+      font-weight: 700;
+      font-size: 14px; }
+      .pay__page__bills__table .base-table td .summ-cell.red {
+        color: #ff0101; }
+      .pay__page__bills__table .base-table td .summ-cell.green {
+        color: #139a13; }
+  .pay__page__bills__table.--mobile {
+    display: none; }
+    .pay__page__bills__table.--mobile .action-cell .ico {
+      width: auto;
+      margin-right: 0; }
+      .pay__page__bills__table.--mobile .action-cell .ico svg {
+        margin-right: 15px; }
+    .pay__page__bills__table.--mobile table {
+      border-top: solid 1px rgba(0, 0, 0, 0.15); }
+    .pay__page__bills__table.--mobile tr:not(:last-child) td {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.15); }
+    .pay__page__bills__table.--mobile td {
+      padding-left: 5px;
+      width: 100%;
+      min-width: initial !important; }
+      .pay__page__bills__table.--mobile td .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; }
+        .pay__page__bills__table.--mobile td .row .td-block {
+          width: 50%; }
+    .pay__page__bills__table.--mobile .td-block {
+      margin-bottom: 20px; }
+      .pay__page__bills__table.--mobile .td-block .label {
+        font-size: 12px;
+        font-weight: 400;
+        color: #737373; }
+      .pay__page__bills__table.--mobile .td-block .data {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 500; }
+  .pay__page__bills__summary {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-size: 15px;
+    border-top: solid 1px #eee;
+    padding-top: 40px; }
+    .pay__page__bills__summary .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 24px; }
+    .pay__page__bills__summary .label {
+      font-weight: 700;
+      margin-right: 10px;
+      color: #313131; }
+    .pay__page__bills__summary .data {
+      font-weight: 700;
+      color: #313131; }
+
+.base-popup.autopay__popup .btn.base-btn.popup-btn__close {
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+  .base-popup.autopay__popup .btn.base-btn.popup-btn__close svg {
+    width: 20px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.base-popup.autopay__popup .base-popup__container form {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .base-popup.autopay__popup .base-popup__container form .autopay-on_off {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eee; }
+    .base-popup.autopay__popup .base-popup__container form .autopay-on_off .label {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px; }
+    .base-popup.autopay__popup .base-popup__container form .autopay-on_off .base-radio {
+      display: inline-block;
+      margin-right: 20px; }
+    .base-popup.autopay__popup .base-popup__container form .autopay-on_off .base-radio input[type="radio"]:checked + label .check {
+      background: #ffd804;
+      border-color: #ffd804; }
+  .base-popup.autopay__popup .base-popup__container form p.info {
+    margin-bottom: 15px;
+    line-height: 1.25;
+    font-size: 13px;
+    color: #4c4c4c; }
+  .base-popup.autopay__popup .base-popup__container form .pay-row {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .base-popup.autopay__popup .base-popup__container form .pay-row .input-block {
+      margin-right: 40px;
+      width: 180px; }
+
+.base-popup.autopay__popup .base-popup__container .btn-row .info {
+  margin-top: 6px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #808080; }
+  .base-popup.autopay__popup .base-popup__container .btn-row .info .attention {
+    color: #ff0101; }
+
+.base-popup.autopay__popup .base-popup__container .connect-paycard {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #eee; }
+  .base-popup.autopay__popup .base-popup__container .connect-paycard .btn.base-btn {
+    background: #22af12;
+    color: #fff; }
+    .base-popup.autopay__popup .base-popup__container .connect-paycard .btn.base-btn:hover {
+      background: #1d980f; }
+  .base-popup.autopay__popup .base-popup__container .connect-paycard .info {
+    margin-top: 6px;
+    font-size: 12px;
+    max-width: 300px;
+    color: #808080; }
+
+@media (max-width: 600px) {
+  .pay__page__bills__table.--desktop {
+    display: none; }
+  .pay__page__bills__table.--mobile {
+    display: block; }
+  .pay__page__bills__summary .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .pay__page__bills__summary .row .label {
+      width: 100%;
+      margin-bottom: 2px; }
+    .pay__page__bills__summary .row .data {
+      width: 100%; } }
