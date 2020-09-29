@@ -923,19 +923,17 @@ body {
   -webkit-transition: 0.35s ease;
   -o-transition: 0.35s ease;
   transition: 0.35s ease;
-  border-bottom: solid 1px #F8CA21;
   line-height: 1;
   font-size: 14px;
   display: inline-block;
+  text-decoration: underline;
   font-family: SFUI; }
   .vats__page .base-link:hover {
-    border-color: transparent; }
+    text-decoration: none; }
   .vats__page .base-link.grey {
-    color: #949494;
-    border-bottom: solid 1px #949494; }
+    color: #949494; }
     .vats__page .base-link.grey:hover {
-      color: #f18a17;
-      border-color: #f18a17; }
+      color: #f18a17; }
 
 .vats__page .screen-main {
   display: -webkit-box;
@@ -977,6 +975,7 @@ body {
     font-weight: 800;
     line-height: 55px;
     margin-bottom: 45px;
+    margin-top: 10vh;
     color: #fff;
     text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
     max-width: 960px; }
@@ -998,6 +997,27 @@ body {
     line-height: 21px;
     margin-bottom: 40px;
     max-width: 620px; }
+  .vats__page .screen-main .benefits {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 160px;
+    width: 100%; }
+    .vats__page .screen-main .benefits .item {
+      max-width: 220px;
+      margin: 20px 2%; }
+      .vats__page .screen-main .benefits .item .ico {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 12px; }
 
 .vats__page .screen-tariffs {
   margin-bottom: 120px; }
@@ -1417,11 +1437,10 @@ body {
   margin-bottom: 80px; }
   .vats__page .screen-city-num .section-title {
     width: 100%;
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
   .vats__page .screen-city-num .item {
     width: 50%;
     padding-right: 12%;
-    padding-left: 4%;
     margin-bottom: 30px; }
     .vats__page .screen-city-num .item .title {
       font-weight: bold;
@@ -1493,7 +1512,7 @@ body {
 .vats__page .cta-big {
   border-top: solid 1px #E0E0E0;
   border-bottom: solid 1px #E0E0E0;
-  padding: 60px 0;
+  padding: 50px 0 40px;
   margin-bottom: 60px; }
   .vats__page .cta-big .wrap {
     display: -webkit-box;
@@ -1507,25 +1526,24 @@ body {
     color: #000000;
     max-width: 300px;
     margin-right: 10%; }
-  .vats__page .cta-big .contacts {
-    padding-top: 80px; }
-    .vats__page .cta-big .contacts .label {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 29px;
-      color: #000000; }
-      .vats__page .cta-big .contacts .label.or {
-        margin-top: 40px; }
-    .vats__page .cta-big .contacts .phone {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 64px;
-      line-height: 76px;
-      color: #000000; }
-    .vats__page .cta-big .contacts .img {
-      margin-top: 20px;
-      margin-left: 20%; }
+  .vats__page .cta-big .contacts .label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000; }
+    .vats__page .cta-big .contacts .label.or {
+      margin-top: 40px; }
+  .vats__page .cta-big .contacts .phone {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 76px;
+    color: #000000; }
+  .vats__page .cta-big .contacts .img {
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 180px; }
 
 .vats-footer {
   background: #262626;
@@ -1542,3 +1560,175 @@ body {
     line-height: 140%;
     margin-top: 14px;
     color: #8F8F8F; }
+
+@media (max-width: 1170px) {
+  .wrap {
+    padding: 0 3%; }
+  .vats__page .screen-features:after {
+    left: calc(100% - 7vw);
+    width: 10vw;
+    height: calc(100% - 60px); }
+  .vats__page .screen-features .features-slider:before {
+    width: 3vw; }
+  .vats__page .screen-introduction .person {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .vats__page .screen-introduction .left-side {
+    min-width: 320px;
+    margin-right: 5%; }
+  .vats__page .screen-introduction .right-side {
+    width: calc(95% - 320px); }
+  .vats__page .screen-introduction .status-bar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px; }
+    .vats__page .screen-introduction .status-bar .item {
+      padding-right: 5%;
+      margin-bottom: 15px; } }
+
+@media (max-width: 1050px) {
+  .vats__page .screen-tariffs__prices {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .vats__page .screen-tariffs__block {
+    width: 48%;
+    margin-bottom: 40px; }
+  .vats__page .cta-big .title {
+    font-size: 30px;
+    line-height: 1.25; }
+  .vats__page .cta-big .contacts .phone {
+    font-size: 46px;
+    line-height: 1; }
+  .vats__page .cta-big .contacts .label {
+    font-size: 18px;
+    line-height: 1; } }
+
+@media (max-width: 850px) {
+  .vats__page .cta-big .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .vats__page .cta-big .wrap .title {
+      width: 100%; }
+    .vats__page .cta-big .wrap .contacts {
+      width: 100%;
+      margin-top: 20px; } }
+
+@media (max-width: 800px) {
+  .vats__page .screen-introduction .right-side {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%; }
+  .vats__page .screen-introduction .left-side {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%; } }
+
+@media (max-width: 660px) {
+  .vats__page .screen-tariffs__block {
+    width: 100%;
+    padding: 15px; }
+    .vats__page .screen-tariffs__block .default-tag {
+      top: 18px; }
+  .vats__page .screen-tariffs__block > .title {
+    margin-bottom: 25px; }
+  .vats__page .screen-tariffs__prices {
+    margin-bottom: 10px; }
+  .vats__page .screen-features .features-slider__item .img {
+    max-width: 100%; }
+  .vats__page .screen-city-num .item {
+    padding-right: 5%; }
+  .vats__page .screen-quality .title {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 10px; }
+  .vats__page .screen-quality .num {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 10px; }
+  .vats__page .screen-quality .info {
+    font-size: 18px;
+    line-height: 1; } }
+
+@media (max-width: 620px) {
+  .vats__page .screen-main .page-title {
+    font-size: 36px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .vats__page .cta {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 140px; }
+  .vats__page .screen-main .info {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .vats__page .screen-main .benefits {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-top: 0; }
+  .vats__page .promo-tag .txt {
+    font-size: 13px; }
+  .vats__page .screen-city-num .item {
+    width: 100%; } }
+
+@media (max-width: 520px) {
+  .vats__page .screen-main .benefits {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .vats__page .screen-main .benefits .item {
+      margin: 20px 0;
+      width: 50%; }
+  .vats__page .screen-features .features-slider__item {
+    padding: 15px;
+    margin-right: 20px; }
+  .vats__page .screen-features .features-slider__item .title {
+    font-size: 18px;
+    line-height: 24px; }
+  .vats__page .screen-features .features-slider__item .info {
+    font-size: 16px;
+    line-height: 22px; }
+  .vats__page .cta.up .promo-tag {
+    left: 40%; }
+  .vats__page .screen-quality .quality-box {
+    padding-left: 0;
+    padding-top: 80px; } }
+
+@media (max-width: 470px) {
+  .vats__page .screen-main .page-title {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 55px; }
+  .vats__page .screen-main .page-title .underlined {
+    display: inline-block; }
+  .vats__page .screen-main .page-title .underlined:before {
+    height: 16px;
+    background-size: 100% 100%;
+    top: 70%; }
+  .vats__page .cta .promo-tag {
+    right: 60%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%); }
+    .vats__page .cta .promo-tag .txt {
+      white-space: nowrap; }
+  .vats__page .screen-tariffs__block .payment .info-tooltip .box {
+    width: calc(100% + 30px);
+    right: -15px; }
+  .vats__page .screen-helps .list .txt {
+    padding-top: 0; }
+  .vats__page .cta-big .contacts .phone {
+    font-size: 36px;
+    margin-top: 10px; } }
+
+@media (max-width: 340px) {
+  .vats__page .screen-main .page-title {
+    font-size: 26px; }
+  .vats__page .cta .btn.base-btn {
+    padding: 21px 48px; }
+  .vats__page .cta-big .contacts .phone {
+    font-size: 30px; } }
