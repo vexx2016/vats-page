@@ -1269,6 +1269,13 @@ body {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 100%); }
     .vats__page .screen-features .features-slider .slick-list {
       overflow: visible; }
+    .vats__page .screen-features .features-slider .slick-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
     .vats__page .screen-features .features-slider__item {
       border: 1px solid #E0E0E0;
       -webkit-box-sizing: border-box;
@@ -1278,7 +1285,8 @@ body {
       margin: 0 30px 0 0;
       -webkit-transition: .35s ease;
       -o-transition: .35s ease;
-      transition: .35s ease; }
+      transition: .35s ease;
+      height: auto; }
       .vats__page .screen-features .features-slider__item .title {
         font-weight: bold;
         font-size: 22px;
